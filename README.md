@@ -1,3 +1,5 @@
+[![Build status](https://badge.buildkite.com/e5a631b49f1d099bab228a8293e215296b70fac542c8902033.svg?branch=master)](https://buildkite.com/oxleyws/cgate)
+
 # CGate Server
 
 This docker image runs Clipsal CGate server for use with C-Bus networks on a raspberry Pi
@@ -20,5 +22,5 @@ docker run \
   -v <path-to-tag-dir>:/cgate/tag \
   -v <path-to-logs-dir>:/cgate/logs \
   --restart unless-stopped \
-  cnery/cgate
+  cnery/cgate:arm-latest
 ```
