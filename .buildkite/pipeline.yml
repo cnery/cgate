@@ -1,0 +1,4 @@
+steps:
+  - label: ':docker: Build and push docker image'
+    command: 'scripts/build-docker.sh'
+    branches: 'master'
