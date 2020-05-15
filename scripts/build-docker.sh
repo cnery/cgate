@@ -8,6 +8,7 @@ curl -O https://updates.clipsal.com/ClipsalSoftwareDownload/mainsite/cis/technic
     rm -f cgate/tag/*
 
 docker build -t cnery/cgate:arm-$BUILDKITE_BUILD_NUMBER -f Dockerfile.arm .
+docker build -t cnery/cgate:x86-64-$BUILDKITE_BUILD_NUMBER -f Dockerfile.x86-64 .
 
 rm -rf cgate
 ./scripts/push-docker.sh
